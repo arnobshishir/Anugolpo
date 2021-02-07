@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "poppins" "sans serif";
+}
+
+.nav{
+	display: flex;
+	position: fixed;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 6.5rem;
+	width: 100%;
+	Background: #222;
+	z-index: 100000;
+}
+.nav h2{
+	color: #fff;
+	font-size: 1.7rem;
+	text-transform: uppercase;
+}
+#item{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+#item li{
+	list-style: none;
+	padding: 40px;
+}
+#item li a{
+	text-decoration: none;
+	font-size: 1rem;
+	text-transform: uppercase;
+	color: #fff;
+}
+#item li a:hover, #item .icon i:hover{
+	color: #ff5733;
+	cursor: pointer;
+}
+#item .icon i{
+	color: #fff;
+	padding: 30px;
+	font-weight: bolder;
+}
+#bar{
+	color: #ff5733;
+	font-weight: lighter;
+	font-size: 1.5rem;
+	display: none;
+}
+.back{
+	background-image: url(img/bg.jpg);
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	z-index: -1;
+}
+.back .overlay{
+	background: #161718;
+	width: 100%;
+	height: 100%;
+	opacity: 0.85;
+}
+.mid{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.mid p{
+	color: #ffff99;
+	font-size: 1.3rem;
+	margin-bottom: 1.5rem;
+}
+.mid h2{
+	color: #ffff00;
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+}
+.mid .btn a{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.mid .btn a.simple{
+	color: #fff;
+	padding: 0.9rem 1.6rem;
+	font-weight: 500;
+}
+.mid .btn a.simple:hover{
+	color:#ff5736;
+	cursor: pointer;
+}
+.mid .btn a.border{
+	color: #ff5736;
+	border: 1px solid #ff5736;
+	border-radius: 3px;
+	padding: 0.9rem 1.6rem;
+	font-weight: 500;
+}
+.mid .btn a.border:hover{
+	background-color:#fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+.detail{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8rem 15rem;
+	background-color: #171819;
+}
+.detail h3,h5{
+	color: #fff;
+	font-size: 1.2rem;
+}
+.detail .one{
+	width:45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.detail .one h3{
+	font-size: 2.5rem;
+	padding-bottom: 1.1rem;
+}
+.detail .one h5{
+	font-size: 1.3rem;
+	font-weight: 400;
+	padding-bottom: 1.1rem;
+}
+.detail .one p{
+	color: #666262;
+	font-size: 1.3rem;
+	padding-bottom: 3rem;
+}
+.detail .one a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 1rem 20;
+	border: 3px solid #ff5736;
+	text-align: center;
+
+}
+.detail .one a:hover{
+	background: #ff5736;
+	color: #fff;
+	border: 1px solid;
+	cursor: pointer;
+}
+.detail .two{
+	width:40%;
+	border-left: 1px solid #fff;
+	padding-left: 3.25rem;
+}
+.detail .two h3{
+	font-size: 2.5rem;
+}
+.detail .two h5{
+	font-size: 1.3rem;
+	font-weight: 3rem;
+}
+.detail .two p{
+	color: #666262;
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
+}
+.owner {
+	background: #f9f9f9;
+	padding: 8rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.owner .about{
+	width: 39%;
+}
+
+.owner .about h2{
+	color:#212529;
+	font-size: 2.1rem;
+	font-family: sans-serif;
+	padding-bottom: 1.8rem;
+}
+
+.owner .about p{
+	color: #7f8c8d;
+	font-size: 1.1rem;
+}
+.owner .people{
+	width: 57%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.owner .people .team1{
+	width: 45%;
+	height: auto;
+	box-sizing: border-box;
+	background: #fff;
+	box-shadow:
+  0 4.2px 3.6px rgba(0, 0, 0, 0.024),
+  0 11.6px 10px rgba(0, 0, 0, 0.035),
+  0 28px 24.1px rgba(0, 0, 0, 0.046),
+  0 93px 80px rgba(0, 0, 0, 0.07)
+;
+}
+.owner .people .team1 .teamdetail .name, .owner .people .team1 .teamdetail .prof{
+	padding: 5px 20px 0 20px;
+}
+.owner .people .team1 .teamdetail{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 10px;
+}
+
+.owner .people .team1 .img img{
+	width: 100%;
+	object-fit: cover;
+}
+
+.owner .people .team1 .teamdetail .name, .owner .people .team1 .teamdetail .prof{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.owner .people .team1 .teamdetail .name h4{
+	color: #212529;
+	font-size: 1.3rem;
+}
+.owner .people .team1 .teamdetail .name i{
+	font-size: 1.3rem;
+	color: #212529;
+	font-weight: bolder;
+	cursor: pointer;
+}
+.owner .people .team1 .teamdetail .prof i{
+	font-size: 1.3rem;
+	color: #212529;
+	font-weight: bolder;
+	cursor: pointer;
+}
+.owner .people .team1 .teamdetail .prof p{
+	color: #212529;
+	
+}
+.class {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 7rem 8rem;
+}
+.class .para{
+	color: #95a5a6;
+	font-size: 1.3rem;
+	padding-bottom: 6px;
+	text-align: center;
+}
+.class .h2{
+	color:#222;
+	font-size: 2.2rem;
+	font-weight: 700;
+	padding-bottom: 50px;
+	text-align: center;
+}
+.class .menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.class .menu .team1{
+	width: 32%;
+	height: auto;
+	box-sizing: border-box;
+	background: #fff;
+	box-shadow:
+  0 4.2px 3.6px rgba(0, 0, 0, 0.024),
+  0 11.6px 10px rgba(0, 0, 0, 0.035),
+  0 28px 24.1px rgba(0, 0, 0, 0.046),
+  0 93px 80px rgba(0, 0, 0, 0.07);
+}
+
+
+.class .menu .team1 .img a img{
+	width: 100%;
+	object-fit: cover;
+}
+
+.class .menu .team1 .teamdetail{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 10px;
+}
+
+.class .menu .team1 .teamdetail .name{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 5px 0 30px;
+}
+.class .menu .team1 .teamdetail .name h4{
+	color: 212529;
+	font-size: 1.7rem;
+}
+.class .menu .team1 .teamdetail .name p{
+	color: 212529;
+	font-size: 1.1rem;
+}
+.class .menu .team1 .teamdetail .name p span{
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+.class .menu .team1 .teamdetail .name .num h5{
+	font-size: 1rem;
+	background: #f13a11;
+	width: 3.7rem;
+	height: 3.7rem;
+	line-height: 3.7rem;
+	text-align: center;
+	border-radius: 50%;
+}
+.class .menu .team1 .teamdetail .prof{
+	padding: 15px 30px 30px 30px;
+}
+.class .menu .team1 .teamdetail .prof p{
+	font-size: 1.1rem;
+	color: 666262;
+}
+.contact{
+	padding: 8rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.contact .form{
+	width: 45%;
+}
+.contact .form h2{
+	color: #212529;
+	padding-bottom: 10px;
+	font-size: 2rem;
+	width: 100%;
+}
+.contact .form .submit{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.contact .form .submit input, .contact .form .submit textarea{
+	width: 100%;
+	padding: 15px;
+	border: 1px solid #95a5a6;
+	outline: none;
+	margin: 13px 0;
+}
+.contact .form .submit input:focus, .contact .form .submit textarea:focus{
+	border: 1px solid #111;
+}
+.contact .form .submit input::placeholder{
+	color: #7f8c8d;
+	font-size: 1.1rem;
+}
+.contact .form .submit textarea::placeholder{
+	color:#7f8c8d;
+	font-size:1.1rem;
+	height: 80%;
+}
+
+.contact .form .submit a{
+	width: 100%;
+	padding: 15px 0;
+	color: #fff;
+	text-decoration: none;
+	background: #111;
+	text-align: center;
+	font-size: 1.1rem;
+	margin: 13px 0;
+}
+
+.contact .map{
+	width: 45%;
+}
+.contact .map iframe{
+	width: 100%;
+}
+.contact .map h2{
+	color: #212529;
+	padding-bottom: 10px;
+	font-size: 2rem;
+	width: 100%;
+}
+
+.contact .map p{
+	color: #212529;
+	padding-bottom: 30px;
+	font-size: 1.1rem;
+	width: 100%;
+}
+.contact .map p i{
+	color: red;
+	padding-right: 3px;
+}
+.footer{
+	border: 1px solid #ecf0f1;
+	padding: 5rem 8rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer p{
+	color: #212529;
+	flex-direction: flex-start;
+}
+.footer i{
+	color: red;
+	padding-right: 5px;
+}
+
+/*---@media query ---*/ 
+@media screen and (max-width: 1042px){
+	.nav{
+	padding: 1rem 4.5rem;
+	}
+	.nav h2{
+	font-size: 1.4rem;
+	}
+
+	#item li{
+	padding-right: 30px;
+	}
+	#item li a{
+	font-size: 0.9rem;
+	}
+	#item .icon i{
+	padding: 20px;
+	}
+}   
+
+@media screen and (max-width: 991px) {
+	.nav{
+	padding: 1rem 3rem;
+	}
+	
+	.nav h2{
+	font-size: 1.6rem;
+	}
+	
+	#item{
+	flex-direction:column;
+	text-align:center;
+	width: 300px;
+	height: 80vh;
+	position: fixed;
+	top: 0;
+	right: -300px;
+	background: rgb(0,0,0,0.8);
+	z-index: 1000000;
+	margin-top: 4.2rem;
+	transition: .3s;
+	
+	}
+	
+	#item li{
+	padding-right: 0;
+	padding: 4px 0;
+	}
+	
+	#item li a{
+	font-size: 1.2rem;
+	}
+	
+	#item .icon{
+	padding-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	}
+	
+	#item .icon i{
+	padding: 0 15px 0 15px;
+	}
+	
+	#bar{
+	
+	display: initial;
+	cursor: pointer;
+	}
+	
+	.mid p{
+		font-size: 1.1rem;
+		margin-bottom: 1.2rem;
+	}
+	.mid h2{
+		
+		font-size: 2.5rem;
+	}
+	
+	.mid .btn{
+		margin-top: 1.5rem;
+	}
+	.mid .btn a{
+		font-size: 0.9rem;
+	}
+	.mid .btn a.simple{
+		padding: 0.7rem 1.4rem;
+	}
+	
+	.mid .btn a.border{
+		padding: 0.9rem 1.6rem;	
+	}
+	
+	.detail{
+	padding: 5rem 4rem;
+	}
+	.detail h3,h5{
+		font-size: 1rem;
+	}
+	.detail .one{
+		width: 50%;
+	}
+	.detail .one h3{
+		font-size: 1.8rem;
+		padding-bottom: 1rem;
+	}
+	.detail .one p{
+		font-size: 1.1rem;
+		padding-bottom: 2.2rem;
+	}
+	.detail .one a{
+		font-size: 1.1rem;
+	}
+	.detail .two{
+		padding-left: 3rem;
+	}
+	.detail .two h3{
+		font-size: 1.8rem;
+	}
+	.detail .two h5{
+		font-size: 1.3rem;
+	}
+	.detail .two p{
+		font-size: 1rem;
+		margin-bottom: 0.6rem;
+	}
+	
+	.owner {
+		padding: 6rem;
+	}
+
+	.owner .about h2{
+		font-size: 2rem;
+		padding-bottom: 1.4rem;
+	}
+
+	.owner .about p{
+		font-size: 1rem;
+	}
+	.owner .people .team1{
+		width: 48%;
+	}
+	.owner .people .team1 .teamdetail .name, .owner .people .team1 .teamdetail .prof{
+		padding: 5px 15px 0 15px;
+	}
+
+	.owner .people .team1 .teamdetail .name h4{
+		font-size: 1.1rem;
+	}
+	.owner .people .team1 .teamdetail .name i{
+		font-size: 1.1rem;
+	}
+	.owner .people .team1 .teamdetail .prof i{
+		font-size: 1.1rem;
+	}
+	
+	.class {
+	padding: 6rem;
+	}
+	.class .para{
+		font-size: 1.1rem;
+		padding-bottom: 4px;
+	}
+	.class .h2{
+		font-size: 2rem;
+		padding-bottom: 30px;
+	}
+
+	.class .menu .team1 .teamdetail{
+		padding-bottom: 7px;
+	}
+
+	.class .menu .team1 .teamdetail .name{
+		padding: 15px 5px 0 15px;
+	}
+	.class .menu .team1 .teamdetail .name h4{
+		font-size: 1.1rem;
+	}
+	.class .menu .team1 .teamdetail .name p{
+		font-size: 1rem;
+	}
+	.class .menu .team1 .teamdetail .name p span{
+		font-size: 1rem;
+	}
+	.class .menu .team1 .teamdetail .name .num h5{
+		font-size: 0.9rem;
+		width: 3.2rem;
+		height: 3.2rem;
+		line-height: 3.2rem;
+	}
+	.class .menu .team1 .teamdetail .prof{
+		padding: 15px 15px 30px 15px;
+	}
+	.class .menu .team1 .teamdetail .prof p{
+		font-size: 1rem;
+	}
+}	
+   
+@media screen and (max-width: 991px) {
+	
+	
+	
+}   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+
+
